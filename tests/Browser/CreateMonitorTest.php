@@ -26,7 +26,6 @@ class CreateMonitorTest extends DuskTestCase
                     ->assertPathIs('/monitors')
                     ->assertVisible('#admin-panel')
                     ->assertVisible('#monitored-apps')
-                    ->visitRoute('admin_monitors')
                     ->assertMissing('@testapp')
                     ->type('url', 'https://example.com')
                     ->type('app_name', 'example')
